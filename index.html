@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Planet Clicker — Inspired</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Planet Clicker — Lite</h1>
+      <div class="header-controls">
+        <button id="saveBtn">Save</button>
+        <button id="loadBtn">Load</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <div class="planet-stage">
+          <div id="planetArea"></div>
+          <div class="click-panel">
+            <button id="clickBtn" class="big">🪐 CLICK</button>
+            <div class="click-info">
+              <div>Clicks: <span id="clickCount">0</span></div>
+              <div>Click Power: <span id="clickPower">1</span></div>
+              <div>Multiplier: <span id="multiplierDisplay">1×</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="automation">
+          <h3>Automation</h3>
+          <div class="row">
+            <button id="buyAuto">Buy Auto Clicker</button>
+            <div>Owned: <span id="autoCount">0</span></div>
+          </div>
+          <label><input type="checkbox" id="automationToggle" checked> Automation Enabled</label>
+        </div>
+
+        <div class="rebirth">
+          <h3>Prestige (Rebirth)</h3>
+          <div class="row">
+            <button id="rebirthBtn">Rebirth</button>
+            <div>Rebirths: <span id="rebirthCount">0</span></div>
+          </div>
+          <div>Rebirth Multiplier: <span id="rebirthMult">1×</span></div>
+          <label><input type="checkbox" id="autoRebirthToggle"> Auto Rebirth</label>
+        </div>
+      </section>
+
+      <aside class="right">
+        <div class="planets-panel">
+          <h3>Planets</h3>
+          <div id="planetList" class="planet-list"></div>
+        </div>
+
+        <div class="upgrades-panel">
+          <h3>Upgrades</h3>
+          <div id="upgradeListContainer">
+            <div id="upgradeList"></div>
+          </div>
+        </div>
+
+        <div class="quick-mult">
+          <h3>Quick Multipliers</h3>
+          <div class="row">
+            <button class="qmult" data-m="2">2×</button>
+            <button class="qmult" data-m="4">4×</button>
+            <button class="qmult" data-m="10">10×</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Inspired by Planet Clicker — original assets & logic are mine. Saved to localStorage automatically.</small>
+    </footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
